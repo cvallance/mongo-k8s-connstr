@@ -1,0 +1,32 @@
+{
+  "name": "mongo-k8s-connstr",
+  "version": "0.0.1",
+  "description": "Mongo connection string provider for Kubernetes",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leportlabs/mongo-k8s-connstr.git"
+  },
+  "keywords": [
+    "kubernetes",
+    "k8s",
+    "mongo",
+    "mongodb",
+    "replica",
+    "replicaset"
+  ],
+  "author": "LePort Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leportlabs/mongo-k8s-connstr/issues"
+  },
+  "homepage": "https://github.com/leportlabs/mongo-k8s-connstr",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  },
+  "dependencies": {
+    "forever": "^0.14.1",
+    "node-kubernetes-client": "^0.1.9"
+  }
+}
