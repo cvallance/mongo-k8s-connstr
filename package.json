@@ -26,7 +26,6 @@
     "mocha": "^2.2.4"
   },
   "dependencies": {
-    "forever": "^0.14.1",
     "node-kubernetes-client": "^0.1.9"
   }
 }
