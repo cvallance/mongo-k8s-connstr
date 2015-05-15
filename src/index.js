@@ -3,6 +3,10 @@ var format = require('util').format;
 var k8s = require('./k8s');
 
 var get = function(done) {
+  if (!config.mongoUrl && !config.mongoPodLabels) {
+    return done(null, false);
+  }
+
   var mongoUrl = config.mongoUrl;
   if (mongoUrl) {
     return done(null, mongoUrl);

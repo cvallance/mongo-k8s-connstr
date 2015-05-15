@@ -1,6 +1,6 @@
 {
   "name": "mongo-k8s-connstr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mongo connection string provider for Kubernetes",
   "main": "src/index.js",
   "repository": {
