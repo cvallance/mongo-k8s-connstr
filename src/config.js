@@ -10,7 +10,7 @@ var getMongoPodLabelCollection = function() {
 
   var labels = process.env.LL_MONGO_POD_LABELS.split(',');
   for (var i in labels) {
-    var keyAndValue = labels[i].split(':');
+    var keyAndValue = labels[i].split('=');
     labels[i] = {
       key: keyAndValue[0],
       value: keyAndValue[1]
