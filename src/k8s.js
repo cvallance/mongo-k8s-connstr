@@ -13,7 +13,10 @@ var getMongoPods = function getPods(done) {
       return done(err);
     }
 
-    var pods = podResult[0].items;
+    var pods = [];
+    for (var j in podResult) {
+      pods = pods.concat(podResult[j].items)
+    }
     var labels = config.mongoPodLabelCollection;
     var results = [];
     for (var i in pods) {
